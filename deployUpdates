@@ -1,0 +1,4 @@
+rsync README.md .
+git add .
+git commit -m "2. Updating README.md adaptations to GitHub pages"
+git push
