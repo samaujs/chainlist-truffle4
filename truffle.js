@@ -17,8 +17,14 @@ module.exports = {
             // Default is using first account, coinbase to deploy contracts
             // customize account where contracts are deployed, second account from web3.eth.accounts
             // from: '0xcd9de0f455bb9bf45a618d72392d887a62ea0644'
-
-
+          },
+          // Create new "rinkeby" network with network id for testing
+          rinkebyNetwork: {
+            host: "localhost",
+            port: 8545,
+            network_id: 4, // 4 is the default Rinkeby Test network
+            // Resolve gas limit error encountered with deploying to private network, truffle bug //
+            gas: 4700000
           }
      }
 };
